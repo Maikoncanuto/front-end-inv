@@ -15,7 +15,7 @@ export class PropostasComponent implements OnInit {
   propostas: PropostaCard[] = [
     {
       title: 'Kevin e Antonio Ferragens Ltda',
-      subtitle: 'Empresa de tecnologia',
+      subtitle: 'Empresa de Ferragens',
       contents: [
         {label: 'Responsável: ', value: 'Jhone Raone'},
         {label: 'CNPJ: ', value: '55.849.250/0001-92'},
@@ -27,7 +27,7 @@ export class PropostasComponent implements OnInit {
     },
     {
       title: 'Noah e Cauê Financeira ME',
-      subtitle: 'Empresa de tecnologia',
+      subtitle: 'Empresa de economia',
       contents: [
         {label: 'Responsável: ', value: 'Geovana Silva'},
         {label: 'Cnpj: ', value: '79.089.148/0001-02'},
@@ -51,7 +51,7 @@ export class PropostasComponent implements OnInit {
     },
     {
       title: 'Santa Marta',
-      subtitle: 'Empresa de tecnologia',
+      subtitle: 'Empresa de saúde',
       contents: [
         {label: 'Responsável: ', value: 'Kleber Santos'},
         {label: 'Cnpj: ', value: '0001.121.54.54'},

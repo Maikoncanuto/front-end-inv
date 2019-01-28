@@ -19,7 +19,7 @@
 </div>
 
 <div class="row">
-  <isus-card-proposta *ngFor="let proposta of propostas | search: {title: searchText}"
+  <isus-card-proposta *ngFor="let proposta of propostas | search: {title: searchText, subtitle: searchText, contents: searchText}"
                       [title]="proposta.title"
                       [subtitle]="proposta.subtitle"
                       [contents]="proposta.contents"
