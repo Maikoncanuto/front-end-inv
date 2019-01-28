@@ -7,7 +7,7 @@
     <mat-card-content>
       <div class="row">
         <div class="col s12 m10">
-          <input placeholder="Pesquisar">
+          <input [(ngModel)]="searchText" placeholder="Pesquisar"/>
         </div>
 
         <div class="col s12 m2">
@@ -19,7 +19,7 @@
 </div>
 
 <div class="row">
-  <isus-card-proposta *ngFor="let proposta of propostas"
+  <isus-card-proposta *ngFor="let proposta of propostas | search: {title: searchText}"
                       [title]="proposta.title"
                       [subtitle]="proposta.subtitle"
                       [contents]="proposta.contents"

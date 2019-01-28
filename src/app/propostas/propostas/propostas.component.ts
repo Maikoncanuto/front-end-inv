@@ -10,26 +10,28 @@ import {PropostaCard} from '../shared/models/proposta-card.interface';
 })
 export class PropostasComponent implements OnInit {
 
+  searchText: string;
+
   propostas: PropostaCard[] = [
     {
       title: 'Kevin e Antonio Ferragens Ltda',
       subtitle: 'Empresa de tecnologia',
       contents: [
+        {label: 'Responsável: ', value: 'Jhone Raone'},
         {label: 'CNPJ: ', value: '55.849.250/0001-92'},
-        {label: 'CNES: ', value: '0001-01'},
-        {label: 'Responsável: ', value: 'Jhone Raone'}
+        {label: 'CNES: ', value: '0001-01'}
       ],
       actions: [
-        {label: 'Opções'}
+        {label: 'Acompanhar'}
       ]
     },
     {
       title: 'Noah e Cauê Financeira ME',
       subtitle: 'Empresa de tecnologia',
       contents: [
-        {label: 'CNPJ: ', value: '79.089.148/0001-02'},
-        {label: 'CNES: ', value: '0002-02'},
-        {label: 'Responsável: ', value: 'Jhone Raone'}
+        {label: 'Responsável: ', value: 'Geovana Silva'},
+        {label: 'Cnpj: ', value: '79.089.148/0001-02'},
+        {label: 'Cnes: ', value: '0002-02'}
       ],
       actions: [
         {label: 'Acompanhar'}
@@ -39,45 +41,45 @@ export class PropostasComponent implements OnInit {
       title: 'Cast Group',
       subtitle: 'Empresa de tecnologia',
       contents: [
-        {label: 'CNPJ: ', value: '0001.121.54.54'},
-        {label: 'CNES: ', value: '0465465'},
-        {label: 'Responsável: ', value: 'Jhone Raone'}
+        {label: 'Responsável: ', value: 'Carlos Souza'},
+        {label: 'Cnpj: ', value: '0001.121.54.54'},
+        {label: 'Cnes: ', value: '0465465'}
       ],
       actions: [
         {label: 'Acompanhar'}
       ]
     },
     {
-      title: 'Cast Group',
+      title: 'Santa Marta',
       subtitle: 'Empresa de tecnologia',
       contents: [
-        {label: 'CNPJ: ', value: '0001.121.54.54'},
-        {label: 'CNES: ', value: '0465465'},
-        {label: 'Responsável: ', value: 'Jhone Raone'}
+        {label: 'Responsável: ', value: 'Kleber Santos'},
+        {label: 'Cnpj: ', value: '0001.121.54.54'},
+        {label: 'Cnes: ', value: '0465465'}
       ],
       actions: [
         {label: 'Acompanhar'}
       ]
     },
     {
-      title: 'Cast Group',
+      title: 'CTIS - Tecnologia',
       subtitle: 'Empresa de tecnologia',
       contents: [
-        {label: 'CNPJ: ', value: '0001.121.54.54'},
-        {label: 'CNES: ', value: '0465465'},
-        {label: 'Responsável: ', value: 'Jhone Raone'}
+        {label: 'Responsável: ', value: 'Bruno Marrone'},
+        {label: 'Cnpj: ', value: '0001.121.54.54'},
+        {label: 'Cnes: ', value: '0465465'}
       ],
       actions: [
         {label: 'Acompanhar'}
       ]
     },
     {
-      title: 'Cast Group',
+      title: 'Stefanini IT Solutions',
       subtitle: 'Empresa de tecnologia',
       contents: [
-        {label: 'CNPJ: ', value: '0001.121.54.54'},
-        {label: 'CNES: ', value: '0465465'},
-        {label: 'Responsável: ', value: 'Jhone Raone'}
+        {label: 'Responsável: ', value: 'Jhone Raone'},
+        {label: 'Cnpj: ', value: '0001.121.54.53'},
+        {label: 'Cnes: ', value: '12487'}
       ],
       actions: [
         {label: 'Acompanhar'}

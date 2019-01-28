@@ -14,14 +14,16 @@ import {
   MatGridListModule,
   MatInputModule,
   MatListModule,
-  MatNativeDateModule, MatSelectModule,
+  MatNativeDateModule,
+  MatSelectModule,
   MatStepperModule
 } from '@angular/material';
 import {CreatePropostaObraComponent} from './form-proposta-obra/create-proposta-obra.component';
 import {CreatePropostaEquipamentoComponent} from './form-proposta-equipamento/create-proposta-equipamento.component';
 import {CreatePropostaCapacitacaoComponent} from './form-proposta-capacitacao/create-proposta-capacitacao.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { CardPropostaComponent } from './shared/card-proposta/card-proposta.component';
+import {CardPropostaComponent} from './shared/card-proposta/card-proposta.component';
+import {SharedModule} from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -51,6 +53,7 @@ import { CardPropostaComponent } from './shared/card-proposta/card-proposta.comp
     MatNativeDateModule,
     MatSelectModule,
     MatInputModule,
+    SharedModule,
     RouterModule.forChild(PROPOSTAS_ROUTE)
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
