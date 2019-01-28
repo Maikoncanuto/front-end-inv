@@ -1,0 +1,111 @@
+<div class="row">
+  <mat-card class="example-card header" style="margin-top: 20px;">
+    <mat-card-header>
+      <mat-card-title>Cadastro de proposta</mat-card-title>
+      <mat-card-subtitle>Formulário de cadastro para proposta</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="row">
+        <div class="col s12 m10">
+          <input placeholder="Número de CNES ou CNPJ">
+        </div>
+
+        <div class="col s12 m2">
+          <button mat-raised-button color="primary" (click)="pesquisar()">Pesquisar</button>
+        </div>
+      </div>
+
+      <div *ngIf="buscaRealizada">
+        <!-- Informações gerais -->
+        <div class="row">
+          <fieldset>
+            <legend>Informações gerais</legend>
+
+            <div class="row">
+              <div class="col m4">
+                <label>CNES:</label> 0001
+              </div>
+
+              <div class="col m4">
+                <label>CNPJ:</label> 00011
+              </div>
+
+              <div class="col m2">
+              </div>
+
+              <div class="col m2">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col m4">
+                <label>Logradouro:</label> Rua campo grande
+              </div>
+
+              <div class="col m2">
+                <label>Número:</label> S/N
+              </div>
+
+              <div class="col m2">
+                <label>Complemento:</label> RUA
+              </div>
+
+              <div class="col m2">
+                <label>Bairro:</label> Centro
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col m4">
+                <label>Tipo de estabelecimento: </label> Centro de saúde/unidade básica
+              </div>
+
+              <div class="4">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col m4">
+                <label>Nome do estabelecimento: </label> Centro de saúde dr heitor albuquerque psfii
+              </div>
+
+              <div class="col m4">
+                <label>Município:</label> Pão de açúcar
+              </div>
+
+              <div class="4">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col m4">
+                <label>Nome empresarial: </label> Prefeitura municipal de pão de açúcar
+              </div>
+
+              <div class="col m4">
+                <label>UF:</label> AL
+              </div>
+
+              <div class="4">
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <!-- Informe objetos -->
+        <div class="row">
+          <mat-card-header>
+            <mat-card-title>Selecione o objeto</mat-card-title>
+          </mat-card-header>
+
+          <div class="col m4" *ngFor="let objeto of objetos">
+            <mat-card style="background-color: #3f51b5 !important; color: white;" (click)="cadastro(objeto.tipo)">{{objeto.nome}}</mat-card>
+          </div>
+        </div>
+      </div>
+
+    </mat-card-content>
+
+  </mat-card>
+</div>

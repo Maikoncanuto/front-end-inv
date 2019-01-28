@@ -1,0 +1,28 @@
+<div class="row">
+  <mat-card class="example-card header">
+    <mat-card-header>
+      <mat-card-title>Propostas</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="row">
+        <div class="col s12 m10">
+          <input placeholder="Pesquisar">
+        </div>
+
+        <div class="col s12 m2">
+          <button mat-raised-button color="primary" (click)="create()">Novo</button>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div class="row">
+  <isus-card-proposta *ngFor="let proposta of propostas"
+                      [title]="proposta.title"
+                      [subtitle]="proposta.subtitle"
+                      [contents]="proposta.contents"
+                      [actions]="proposta.actions">
+  </isus-card-proposta>
+</div>
